@@ -1,0 +1,18 @@
+/* pages/join/index.wxss */
+.container{
+  background: rgba(78, 197, 157, 0.274);
+  height: 100vh;
+}
+.from-area{
+  margin-top: 0rpx;
+  width: 100%;
+  color: rgb(85, 190, 168);
+}
+.font{
+  color: #fff;
+  font-size: 60rpx;
+  font-style: normal;
+}
+.btn-area{
+  width: 100%;
+}

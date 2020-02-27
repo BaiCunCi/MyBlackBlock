@@ -1,0 +1,16 @@
+<!--pages/join/index.wxml-->
+<view class="container">
+  <view class="font"><text>Join us</text></view>
+  <view class="from-area">
+    <i-input title="账号：" placeholder="手机号/邮箱"  type="text" right value="{{accout}}" bind:change="changeAccout" mode="wrapped"/>
+    <i-input title="密码：" placeholder="密码"  type="password" right value="{{pass}}"bind:change="changePass" mode="wrapped"/>
+    <i-input title="确认密码：" placeholder="确认密码"  type="password" right value="{{repeatPass}}"bind:change="changerepeatPass" mode="wrapped"/>
+  </view>
+  <view class="btn-area">
+    <i-button bind:click="registerAction" type="info" >加入小黑板</i-button>
+  </view>
+  <i-modal visible="{{visiDialog}}" bind:ok="confirmCode" bind:cancel="cancelCode" title="验证码已发送，请输入">
+    <i-input value="{{validateCode}}" type="number" right  placeholder="验证码" mode="wrapped" bind:change="changeValidataCode"/>
+  </i-modal>
+
+</view>

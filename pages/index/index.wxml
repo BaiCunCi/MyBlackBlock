@@ -1,13 +1,41 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+  <view class="userinfo" style="width:100vw;margin-top:0rpx;paddng-top:0rpx">
+      <!-- <i-input type="text" mode="wrapped" right title="账号:" placeholder="手机号/邮箱"/>
+      <i-input type="password" title="密码:" placeholder="密码"/> -->
+      <!-- <i-button size="large" type="primary">测试按钮</i-button>
+      <i-button size="small" type="info">测试按钮</i-button>
+      <i-button size="small" type="success" disabled>成功按钮</i-button>
+      <i-button size="small" type="warning" shape="circle" loading>警告按钮</i-button> -->
+      <i-modal visible title="操作提示">是否确认删除？</i-modal>
+      <!-- <i-grid>
+        <i-grid-item>
+          <i-grid-icon>
+            <image src="../../resources/static/images/grid.jpg"/>
+          </i-grid-icon>
+
+          <i-grid-label>
+           嗯嗯嗯嗯...
+          </i-grid-label>
+        </i-grid-item>
+        <i-grid-item>
+          <i-grid-icon>
+            <image src="../../resources/static/images/grid.jpg"/>
+          </i-grid-icon>
+
+          <i-grid-label>
+           嗯嗯嗯嗯...
+          </i-grid-label>
+        </i-grid-item>
+        <i-grid-item>
+          <i-grid-icon>
+            <image src="../../resources/static/images/grid.jpg"/>
+          </i-grid-icon>
+
+          <i-grid-label>
+           嗯嗯嗯嗯...
+          </i-grid-label>
+        </i-grid-item>
+      </i-grid> -->
   </view>
 </view>
